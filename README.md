@@ -11,6 +11,20 @@ To see all the devices connected use the following URL: ```http://ip:8083/ZAutom
 ### Commands
 To send a command to a particular device use the following URL: ```http://ip:8083/ZAutomation/api/v1/devices/ZWayVDev_zway_{ID}/command/on```.
 
+ID is the full identifier, e.g. ZwayVDev_zway_2-0-48-1 - node, instance, command class, scale.
+
+Example:
+http://ip:8083/ZAutomation/api/v1/devices/ZWayVDev_zway_2-0-37
+http://ip:8083/ZAutomation/api/v1/devices/ZWayVDev_zway_2-0-37/command/on
+
+
+### Get information from a device
+http://ip:8083/ZAutomation/api/v1/devices/ZWayVDev_zway_2-0-49-4
+
+Low level API:
+http://ip:8083/ZWaveAPI/Run/devices[2].instances[0].commandClasses[49].data[4].val.value
+http://ip:8083/ZWaveAPI/Run/devices[2].instances[0].commandClasses[37].Set(255)
+
 ## Resources
 * General info about Razberry: http://razberry.z-wave.me/
 * Installation: http://razberry.z-wave.me/index.php?id=24
