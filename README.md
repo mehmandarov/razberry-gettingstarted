@@ -21,7 +21,7 @@ To send a command to a particular device use the following URL:
 http://ip:8083/ZAutomation/api/v1/devices/ZWayVDev_zway_{ID}/command/on
 ```
 
-ID is the full identifier, e.g. ZwayVDev_zway_2-0-48-1 – node, instance, command class, scale (dash [-] separated).
+ID is the full identifier, e.g. ZwayVDev_zway_2-0-48-1 – dash [-] separated _node_, _instance_, _command class_, and _scale_.
 
 Example:
 ```
