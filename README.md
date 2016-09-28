@@ -1,5 +1,5 @@
 # razberry-gettingstarted
-Example code for using Razberry to control Z-Wave devices for builing IoT solutions
+Example code for using [Razberry](http://razberry.z-wave.me/) to control Z-Wave devices for builing IoT solutions.
 
 ## API
 ### Authentication
