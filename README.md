@@ -3,27 +3,47 @@ Example code for using Razberry to control Z-Wave devices for builing IoT soluti
 
 ## API
 ### Authentication
-It is possible to use simple authentication to perform the requests with no extra authentication request, e.g. ```http://admin:Senseloop1@ip:8083/anyurl```.
+It is possible to use simple authentication to perform the requests with no extra authentication request, e.g.:
+
+```
+http://admin:Senseloop1@ip:8083/anyurl
+```
 
 ### List devices
-To see all the devices connected use the following URL: ```http://ip:8083/ZAutomation/api/v1/devices```.
+To see all the connected devices use the following URL: 
+```
+http://ip:8083/ZAutomation/api/v1/devices
+```
 
 ### Commands
-To send a command to a particular device use the following URL: ```http://ip:8083/ZAutomation/api/v1/devices/ZWayVDev_zway_{ID}/command/on```.
+To send a command to a particular device use the following URL: 
+```
+http://ip:8083/ZAutomation/api/v1/devices/ZWayVDev_zway_{ID}/command/on
+```
 
-ID is the full identifier, e.g. ZwayVDev_zway_2-0-48-1 - node, instance, command class, scale.
+ID is the full identifier, e.g. ZwayVDev_zway_2-0-48-1 – node, instance, command class, scale (separated with a dash -).
 
 Example:
+```
 http://ip:8083/ZAutomation/api/v1/devices/ZWayVDev_zway_2-0-37
 http://ip:8083/ZAutomation/api/v1/devices/ZWayVDev_zway_2-0-37/command/on
-
+```
 
 ### Get information from a device
+#### High level API
+```
 http://ip:8083/ZAutomation/api/v1/devices/ZWayVDev_zway_2-0-49-4
+```
 
-Low level API:
+#### Low level API
+Get values:
+```
 http://ip:8083/ZWaveAPI/Run/devices[2].instances[0].commandClasses[49].data[4].val.value
+```
+Set values:
+```
 http://ip:8083/ZWaveAPI/Run/devices[2].instances[0].commandClasses[37].Set(255)
+```
 
 ## Resources
 * General info about Razberry: http://razberry.z-wave.me/
