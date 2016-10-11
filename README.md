@@ -6,7 +6,7 @@ Example code for using [Razberry](http://razberry.z-wave.me/) to control Z-Wave 
 It is possible to use simple authentication to perform the requests with no extra authentication request, e.g.:
 
 ```
-http://{username}:{password}@ip:8083/anyurl
+http://{username}:{password}@{ip}:8083/{anyurl}
 ```
 
 ### List devices
