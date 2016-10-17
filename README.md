@@ -2,6 +2,8 @@
 Example code for using [Razberry](http://razberry.z-wave.me/) to control Z-Wave devices for building IoT solutions.
 
 ## API
+*All requests* listed below require basic authentication. Without autentification parameters you will be presented with HTTP error code ```401 Unauthorized```. For more information, see [authentication](#authentication) sub-chapter on this page.
+
 ### Authentication
 For sending HTTP requests with authentication it is advisable to use command line tools like ```curl```, or tools like [Postman](https://www.getpostman.com/) (or similar). This will simplify the the process of authentication, request development and testing, as well as handling the JSON responses from those requests.
 
