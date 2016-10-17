@@ -3,7 +3,7 @@ Example code for using [Razberry](http://razberry.z-wave.me/) to control Z-Wave 
 
 ## API
 ### Authentication
-For sending HTTP requests with authentication it is advisable to use command line tools like ```curl```, or tools like [Postman](https://www.getpostman.com/) (or similar). This will simplify the development and testing og the requests and handling the JSON responses from those requests.
+For sending HTTP requests with authentication it is advisable to use command line tools like ```curl```, or tools like [Postman](https://www.getpostman.com/) (or similar). This will simplify the the process of authentication, request development and testing, as well as handling the JSON responses from those requests.
 
 It is also possible to use simple authentication to perform the requests with no extra authentication request. However, keep in mind that embedding authentication information into URL might have been disabled or depricated in your browser. Example of such request:
 
