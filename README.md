@@ -35,16 +35,19 @@ http://{ip}:8083/ZAutomation/api/v1/devices/ZWayVDev_zway_2-0-37/command/on
 
 ### Get information from a device
 #### High level API
+Provides you with basic information about a device:
 ```
 http://{ip}:8083/ZAutomation/api/v1/devices/ZWayVDev_zway_2-0-49-4
 ```
 
 #### Low level API
-Get values:
+For getting and, especially, setting values you can use the low level API. Device number, instance, command class and other paramters used in the request below can be extracted from the _device ID_ described in the [commands](#commands) sub-chapter.
+
+Get a particular value:
 ```
 http://{ip}:8083/ZWaveAPI/Run/devices[2].instances[0].commandClasses[49].data[4].val.value
 ```
-Set values:
+Set a particular value:
 ```
 http://{ip}:8083/ZWaveAPI/Run/devices[2].instances[0].commandClasses[37].Set(255)
 ```
